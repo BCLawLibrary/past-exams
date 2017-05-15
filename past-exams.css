@@ -1,0 +1,36 @@
+.dataTables_filter input {
+	margin-left:5px;
+	color:#555;
+	
+}
+
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped th {
+	background-color:#fff;
+	color:#555;
+}
+.table-striped > tbody > tr:nth-child(odd) > td {
+	color:#555;
+
+}
+
+.dataTables_filter {
+	float:left;
+	margin-bottom:10px;
+}
+
+.dataTables_info {
+	float:right;
+	margin-bottom:10px;
+}
+.dataTables_info .btn {
+	margin-left:10px;
+}
+
+.course-name, .instructor {
+	cursor:pointer;
+}
+
+.table-striped  .course-name:hover, .table-striped  .instructor:hover {
+	color: #A25729;
+	background-color:#eee;
+}

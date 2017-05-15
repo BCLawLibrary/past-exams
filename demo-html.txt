@@ -1,0 +1,11 @@
+<link rel="stylesheet" type="text/css" href="https://www.bc.edu/content/dam/bc1/schools/law/js/library/past-exams/css/past-exams.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
+<script src="https://www.bc.edu/content/dam/bc1/schools/law/js/library/past-exams/scripts/tabletop.js"></script>
+<script src="https://www.bc.edu/content/dam/bc1/schools/law/js/library/past-exams/scripts/tabletop-feed-past-exams.js"></script>
+
+<h2>Past Exams</h2>
+<p>Past exams are shared with the Law School community through Google Drive via BC Gmail accounts.</p>
+
+<div id="exams">
+
+</div>
