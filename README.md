@@ -1,2 +1,1 @@
-# past-exams
-Past Exams
+# Past Exams
