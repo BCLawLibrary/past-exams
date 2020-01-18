@@ -4,6 +4,10 @@
 	
 }
 
+#pagecontent #exams .btn.btn-default, #pagecontent #exams .btn {
+	width:auto;
+}
+
 .table-striped > tbody > tr:nth-child(even) > td, .table-striped th {
 	background-color:#fff;
 	color:#555;

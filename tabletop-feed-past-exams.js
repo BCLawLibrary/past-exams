@@ -65,18 +65,22 @@ function writeTableWith(dataSource){
 			$('td.course-name').click(function() {
 					var name = $(this).text();
 					api.search('').columns().search('').column(1).search(name).draw();
-					scrollAnchor.scrollIntoView();
+					$('html,body').stop().animate({scrollTop: $('#exams-title').offset().top});
+					
 	
 			});
 			$('td.instructor').click(function() {
 					var name = $(this).text();
 					api.search('').columns().search('').column(2).search(name).draw();
-					scrollAnchor.scrollIntoView();
+					$('html,body').stop().animate({scrollTop: $('#exams-title').offset().top});
+					
 	
 			});
 			$('.show-all').click(function() {
 					api.search('').columns().search('').draw();
-					scrollAnchor.scrollIntoView();
+					if ($('#exams-title').offset().top < $('html,body').scrollTop() ) {
+						$('html,body').stop().animate({scrollTop: $('#exams-title').offset().top});
+					}	
 	
 			});
 			
@@ -90,6 +94,10 @@ function writeTableWith(dataSource){
 	if (mycourse.length >0) {
 	 oTable.fnFilter(mycourse, 1);
 	}
+	
+	$(window).bind("mousewheel", function() {
+		$("html, body").stop();
+	});
 	
 	
 };
