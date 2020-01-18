@@ -65,21 +65,27 @@ function writeTableWith(dataSource){
 			$('td.course-name').click(function() {
 					var name = $(this).text();
 					api.search('').columns().search('').column(1).search(name).draw();
+
 					$('html,body').stop().animate({scrollTop: $('#exams-title').offset().top});
+
 					
 	
 			});
 			$('td.instructor').click(function() {
 					var name = $(this).text();
 					api.search('').columns().search('').column(2).search(name).draw();
+
 					$('html,body').stop().animate({scrollTop: $('#exams-title').offset().top});
+
 					
 	
 			});
 			$('.show-all').click(function() {
 					api.search('').columns().search('').draw();
 					if ($('#exams-title').offset().top < $('html,body').scrollTop() ) {
+
 						$('html,body').stop().animate({scrollTop: $('#exams-title').offset().top});
+
 					}	
 	
 			});
