@@ -44,6 +44,7 @@ $(document).ready(function(){
         },
         'ajax' : {
           url:'https://sheets.googleapis.com/v4/spreadsheets/1tVM_k3t7uMuah5y1hCtf6Lx7YqRBIk0MzPeeE7WHunU/values/A:I?key=AIzaSyD8Y28YJpVhE4XlVlOoA74Ws47YdPz5nGA',
+          cache: true,
           'dataSrc': function(json) {
             var myData = json['values']; //spreadsheet data lives in an array with the name values
             //rewrite data to an object with key-value pairs. This is also a chance to rename or ignore columns
